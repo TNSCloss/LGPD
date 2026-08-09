@@ -11,10 +11,10 @@ O Art. 41, §1º da LGPD exige que o Encarregado tenha um **canal de comunicaç�
 | `README.md` | Este índice + instruções do screenshot |
 
 
+09-canal-do-encarregado/canal-encarregado.png
 
-
- `![09-canal-do-encarregado](canal-encarregado.png)` 
- `![Canal do Encarregado](canal-encarregado_2.png)` 
+09-canal-do-encarregado/canal-encarregado_2.png
+ 
 
 
 ## Diferenciais
