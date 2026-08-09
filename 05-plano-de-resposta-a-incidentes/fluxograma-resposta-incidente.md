@@ -31,7 +31,7 @@ related_docs:
 
 ```mermaid
 flowchart TD
-    A([DETECÇÃO do incidente<br/>Pessoa/Sistema/Terceiro]) --> B[Comunicar imediatamente<br/>CISO / Encarregado (DPO)<br/>canais: e-mail + WhatsApp 24x7]
+    A([DETECÇÃO do incidente<br/>Pessoa/Sistema/Terceiro]) --> B["Comunicar imediatamente<br/>CISO / Encarregado (DPO)<br/>canais: e-mail + WhatsApp 24x7"]
     B --> C[Acionar Comitê de Incidentes<br/>CISO + DPO + TI + Jurídico + Comunicação]
     C --> D[CONTER e PRESERVAR evidências<br/>isolar sistemas, não apagar logs]
     D --> E{TRIAGEM: houve acesso,<br/>perda ou vazamento de dados<br/>pessoais?}

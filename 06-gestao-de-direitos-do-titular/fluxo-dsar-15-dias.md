@@ -34,7 +34,7 @@ flowchart TD
     B --> C[T0+1d: VALIDAÇÃO DE IDENTIDADE<br/>ver matriz-validacao-identidade]
     C --> D{Identidade validada?}
     D -->|Não| E[T0+3d: pedir documentos adicionais<br/>suspende prazo até resposta]
-    D -->|Sim| F[T0+3d: LOCALIZAÇÃO dos dados<br/>varredura em CRM, ERP, RH, logs,<br/>operadores (via DPA)]
+    D -->|Sim| F["T0+3d: LOCALIZAÇÃO dos dados<br/>varredura em CRM, ERP, RH, logs,<br/>operadores (via DPA)"]
     F --> G[T0+7d: ANÁLISE JURÍDICA<br/>verificar exceções Art.18 §3º/§4º<br/>e obrigação legal de conservação]
     G --> H[T0+10d: REDAÇÃO da resposta<br/>template por direito<br/>ver templates-resposta-direitos]
     H --> I[T0+15d: ENTREGA ao titular<br/>meio seguro e confidencial]
