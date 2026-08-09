@@ -1,3 +1,4 @@
+
 # Modelo de Relatório de Impacto à Proteção de Dados Pessoais (RIPD/DPIA)
 
 > **Instruções de uso:** Substitua todos os campos entre `[colchetes]` pelos dados reais do tratamento avaliado. Remova ou marque as opções não aplicáveis. Documentos preenchidos devem ser persistidos em `.opencode/vault/privacy/` com identificador próprio e revisados sempre que houver mudança no fluxo do dado.
@@ -155,3 +156,11 @@ O RIPD deve ser **revisado** quando:
 - **NIST CSF v2.0:** GV.RM (Risk Management Strategy) e ID.RA (Risk Assessment).
 - **ANPD:** Guia Orientativo de RIPD; Resolução CD/ANPD nº 2/2022; Resolução CD/ANPD nº 15/2024.
 - **GOV.BR (SGD/MGI):** Modelo simplificado de RIPD da Secretaria de Governo Digital.
+
+## Anexos
+
+- [ ] Registro das evidências coletadas (screenshots, diagramas de fluxo de dados, contratos)
+- [ ] Diagrama de fluxo de dados (coleta → uso → armazenamento → compartilhamento → descarte)
+- [ ] Política de privacidade correspondente ([[policies/index|Índice de Políticas]])
+- [ ] Acordo de processamento (DPA) com operadores
+- [ ] Relação com outros documentos: [[templates/index|Índice de Modelos e Templates]]
