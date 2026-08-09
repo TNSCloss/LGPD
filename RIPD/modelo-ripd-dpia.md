@@ -1,7 +1,7 @@
 
 # Modelo de Relatório de Impacto à Proteção de Dados Pessoais (RIPD/DPIA)
 
-> **Instruções de uso:** Substitua todos os campos entre `[colchetes]` pelos dados reais do tratamento avaliado. Remova ou marque as opções não aplicáveis. Documentos preenchidos devem ser persistidos em `.opencode/vault/privacy/` com identificador próprio e revisados sempre que houver mudança no fluxo do dado.
+> **Instruções de uso:** Substitua todos os campos entre `[colchetes]` pelos dados reais do tratamento avaliado.
 
 ## 1. Informações Gerais
 
