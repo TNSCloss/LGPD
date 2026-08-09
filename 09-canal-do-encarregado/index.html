@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canal do Encarregado — Supermercado 10</title>
+  <meta name="description" content="Canal oficial do Encarregado de Dados (DPO) da Supermercado 10 — exercício dos seus direitos previstos na LGPD.">
+  <style>
+    :root {
+      --vermelho: #c8102e;
+      --vermelho-escuro: #8e0b20;
+      --cinza: #5a5f66;
+      --fundo: #f4f5f7;
+      --borda: #dfe1e5;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #1c1e21; background: var(--fundo); line-height: 1.6; }
+    header { background: linear-gradient(135deg, var(--vermelho), var(--vermelho-escuro)); color: #fff; padding: 2.2rem 1.5rem; }
+    .container { max-width: 880px; margin: 0 auto; }
+    header .container { display: flex; align-items: center; gap: 1.2rem; }
+    .logo { width: 58px; height: 58px; border-radius: 12px; background: #fff; color: var(--vermelho); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.5rem; }
+    header h1 { font-size: 1.45rem; }
+    header p { opacity: .92; font-size: .95rem; }
+    main.container { padding: 1.8rem 1.5rem 3rem; }
+    .card { background: #fff; border: 1px solid var(--borda); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.3rem; }
+    .card h2 { color: var(--vermelho-escuro); font-size: 1.1rem; margin-bottom: .8rem; }
+    .contato { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .9rem; }
+    .contato .item { background: #fff; border: 1px solid var(--borda); border-radius: 10px; padding: 1rem; }
+    .contato .item strong { display: block; color: var(--vermelho-escuro); margin-bottom: .25rem; }
+    ul.direitos { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: .55rem; }
+    ul.direitos li { background: #fafafb; border-left: 4px solid var(--vermelho); padding: .6rem .8rem; border-radius: 6px; font-size: .93rem; }
+    label { display: block; margin: .7rem 0 .25rem; font-size: .9rem; font-weight: 600; }
+    input, select, textarea { width: 100%; padding: .65rem .8rem; border: 1px solid var(--borda); border-radius: 8px; font: inherit; background: #fff; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
+    button { margin-top: 1.1rem; background: var(--vermelho); color: #fff; border: 0; padding: .8rem 1.6rem; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; }
+    button:hover { background: var(--vermelho-escuro); }
+    .aviso { font-size: .82rem; color: var(--cinza); margin-top: .7rem; }
+    .tag-incidente { display: inline-block; background: #fff3e0; color: #995b00; border: 1px solid #ffd591; border-radius: 20px; padding: .35rem .9rem; font-size: .85rem; margin-bottom: .8rem; }
+    footer { text-align: center; color: var(--cinza); font-size: .82rem; padding: 1.5rem; }
+    #toast { position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%); background: #1c1e21; color: #fff; padding: .8rem 1.4rem; border-radius: 8px; opacity: 0; transition: opacity .3s; pointer-events: none; }
+    #toast.show { opacity: 1; }
+    @media (max-width: 560px) { .row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">10</div>
+      <div>
+        <h1>Canal do Encarregado de Dados</h1>
+        <p>Supermercado 10 · Proteção de Dados Pessoais (LGPD — Lei 13.709/2018)</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <span class="tag-incidente">⚠️ Suspeita de vazamento de dados? Notifique em até 24h → seguranca@supermercado10.com.br</span>
+      <h2>Quem é o Encarregado</h2>
+      <p><strong>[Nome do Encarregado]</strong> — Encarregado de Dados (DPO), designado nos termos do <strong>Art. 41</strong> da LGPD.</p>
+      <p style="margin-top:.6rem;">O Encarregado é o canal oficial entre você, a empresa e a Autoridade Nacional de Proteção de Dados (ANPD). Seu atendimento é <strong>gratuito</strong> e confidencial.</p>
+    </div>
+
+    <div class="card">
+      <h2>Seus direitos (Art. 18)</h2>
+      <ul class="direitos">
+        <li>Confirmação da existência de tratamento</li>
+        <li>Acesso aos seus dados</li>
+        <li>Correção de dados inexatos</li>
+        <li>Anonimização, bloqueio ou eliminação</li>
+        <li>Portabilidade a outro fornecedor</li>
+        <li>Eliminação de dados com consentimento</li>
+        <li>Informação sobre compartilhamentos</li>
+        <li>Informação sobre negativa de consentimento</li>
+        <li>Revogação do consentimento</li>
+        <li>Revisão de decisões automatizadas (Art. 20)</li>
+      </ul>
+      <p class="aviso">Prazo de resposta: até <strong>15 dias</strong>, conforme orientação da ANPD. O exercício de direitos não gera custo.</p>
+    </div>
+
+    <div class="card">
+      <h2>Registre sua solicitação</h2>
+      <form id="form">
+        <div class="row">
+          <div><label for="nome">Nome completo *</label><input id="nome" required></div>
+          <div><label for="cpf">CPF *</label><input id="cpf" required placeholder="000.000.000-00"></div>
+        </div>
+        <div class="row">
+          <div><label for="email">E-mail *</label><input type="email" id="email" required></div>
+          <div><label for="tel">Telefone / WhatsApp</label><input id="tel" placeholder="(11) 90000-0000"></div>
+        </div>
+        <label for="direito">Direito que deseja exercer *</label>
+        <select id="direito" required>
+          <option value="">Selecione…</option>
+          <option>Confirmação de tratamento</option>
+          <option>Acesso aos dados</option>
+          <option>Correção de dados</option>
+          <option>Anonimização / bloqueio / eliminação</option>
+          <option>Portabilidade</option>
+          <option>Eliminação (dados com consentimento)</option>
+          <option>Informação sobre compartilhamento</option>
+          <option>Revogação de consentimento</option>
+          <option>Revisão de decisão automatizada</option>
+          <option>Outro / dúvida</option>
+        </select>
+        <label for="msg">Detalhe da solicitação *</label>
+        <textarea id="msg" rows="4" required placeholder="Descreva o que você precisa (ex.: acesso ao relatório dos meus dados; exclusão do cadastro do programa Cliente 10)."></textarea>
+        <button type="submit">Enviar solicitação</button>
+        <p class="aviso">* A identidade será validada para proteger seus dados. Nunca envie senhas. Veja nossa <a href="politica-cookies.md" style="color:var(--vermelho);">Política de Cookies</a> e a <a href="../04-politicas/politica-privacidade-externa-site.md" style="color:var(--vermelho);">Política de Privacidade</a>.</p>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Outros canais</h2>
+      <div class="contato">
+        <div class="item"><strong>E-mail oficial</strong>lgpd@supermercado10.com.br</div>
+        <div class="item"><strong>Telefone</strong>0800 400 1010 (2ª a 6ª, 9h–18h)</div>
+        <div class="item"><strong>ANPD</strong>anpd.gov.br — recurso em caso de não atendimento</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>Supermercados 10 · CNPJ 12.345.678/0001-90 · Conformidade LGPD · [data de revisão: 08/08/2026]</footer>
+
+  <div id="toast">Solicitação registrada com sucesso! Protocolo gerado (demonstração).</div>
+
+  <script>
+    document.getElementById('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var t = document.getElementById('toast');
+      t.classList.add('show');
+      setTimeout(function () { t.classList.remove('show'); }, 3500);
+      this.reset();
+    });
+  </script>
+</body>
+</html>
