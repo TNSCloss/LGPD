@@ -9,13 +9,11 @@ O Art. 41, §1º da LGPD exige que o Encarregado tenha um **canal de comunicaç�
 | `index.html` | **Página web do canal do titular** (HTML/CSS/JS puros, sem dependências) — formulário DSAR, lista dos 10 direitos do Art. 18, contatos e canal de incidentes |
 | `politica-cookies.md` | **Política de Cookies** com **mapa de cookies** por categoria: essenciais, analíticos e marketing |
 | `README.md` | Este índice + instruções do screenshot |
+## Screenshot do canal do titular
 
+![Canal do Encarregado](canal-encarregado.png)
 
-09-canal-do-encarregado/canal-encarregado.png
-
-09-canal-do-encarregado/canal-encarregado_2.png
- 
-
+![Canal do Encarregado — versão 2](canal-encarregado_2.png)
 
 ## Diferenciais
 
