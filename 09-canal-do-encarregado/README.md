@@ -10,25 +10,12 @@ O Art. 41, §1º da LGPD exige que o Encarregado tenha um **canal de comunicaç�
 | `politica-cookies.md` | **Política de Cookies** com **mapa de cookies** por categoria: essenciais, analíticos e marketing |
 | `README.md` | Este índice + instruções do screenshot |
 
-## Como gerar o print da página
 
-A página é autossuficiente (abre sem servidor). Para o screenshot do portfólio:
 
-```bash
-# 1) Abra no navegador
-open index.html            # mac
-xdg-open index.html        # linux
-start index.html           # windows
 
-# 2) Ou gere o print por linha de comando (se tiver um navegador headless)
-google-chrome --headless --screenshot=canal-encarregado.png --window-size=1200,900 index.html
-# ou
-chromium --headless --screenshot=canal-encarregado.png --window-size=1200,900 index.html
-```
+ `![Canal do Encarregado](canal-encarregado.png)` 
+ `![Canal do Encarregado](canal-encarregado_2.png)` 
 
-Depois, adicione a imagem ao repositório e referencie-a aqui como `![Canal do Encarregado](canal-encarregado.png)` (o placeholder foi deixado como comentário no HTML).
-
-> **Dica:** para uma versão com identidade real, substitua `[Nome do Encarregado]` no HTML e ajuste as cores da marca.
 
 ## Diferenciais
 
